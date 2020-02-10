@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<title>La carta veloz S.L.</title>
+	<head>
+	<body>
+		<h1>LA CARTA VELOZ</h1>
+		<img id="imagen" src="sobres.jpg" alt="Imagen de sobres" width="150" />
+		<br/><br/>
+		<table border="1">
+			<caption>Título de la Tabla</caption>
+			<tr>
+				<th>Producto</th>
+				<th>España</th>
+				<th>Resto Europa</th>
+				<th>América</th>
+				<th>Asia</th>
+				<th>Oceanía</th>
+				<th>África</th>
+			</tr>
+			<tr>
+				<td>Normal</td>
+				<td>1,20</td>
+				<td>1,50</td>
+				<td>2,00</td>
+				<td>2,15</td>
+				<td>2,30</td>
+				<td>2,15</td>
+			</tr>
+			<tr>
+				<td>Certificada</td>
+				<td>2,20</td>
+				<td>2,50</td>
+				<td>3,00</td>
+				<td>3,15</td>
+				<td>3,30</td>
+				<td>3,15</td>
+			</tr>
+			<tr>
+				<td>Urgente</td>
+				<td>3,00</td>
+				<td>3,50</td>
+				<td>4,00</td>
+				<td>5,00</td>
+				<td>6,00</td>
+				<td>5,00</td>
+			</tr>
+		</table>
+		<br/><br/>
+		<p >Deberá especificar <span id="span1">Producto, Destino, Dirección de Origen e Email. En caso de Destino distinto de los reflejados tendrá que teclear 10,00 en Tarifa Extra</span></p>
+		<br/><br/>
+		<form id="formulario" action="#" method="post">
+		<!-- value en option y selected -->
+			<label for="producto">Producto*:</label>
+				<select id="producto" autofocus required>
+                    <option>---</option>					
+                    <option>Normal</option>
+					<option>Certificada</option>
+					<option selected>Urgente</option>
+				</select>
+			<br/>
+			<label for="destino">Destino*:</label>
+				<input id="destino" type="text" maxlength="40" list="destinos" required/>
+				<datalist id="destinos">
+					<option>España</option>
+					<option>Resto Europa</option>
+					<option>América</option>
+					<option>Asia</option>
+					<option>Oceanía</option>
+					<option>África</option>
+				</datalist>
+			<br />
+			<label for="tarifaExtra">Tarifa Extra:</label>
+				<input type="number" id="tarifaExtra" value="0.00" min="0.00" max="10.00" step="0.01" />
+			<br />
+			<label for="direccionOrigen">Dirección Origen*:</label>
+				<input id="direccionOrigen" type="text" maxlength="40" pattern="^[A-Z][a-z]*\s?[A-Z]?[a-z]*\s?[A-Z]?[a-z]+$" required/>
+			<br />
+			<label for="email">Email*:</label>
+				<input type="email" id="email" required/>
+			<br /><br />
+			<input type="reset" id="botonreset" value="RESET" /> <input type="SUBMIT" id="botonsubmit" value="ENVIAR" />
+		</form>
+	</body>
+</html>

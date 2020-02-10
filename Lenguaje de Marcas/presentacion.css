@@ -1,0 +1,36 @@
+/*Mi primer fichero*/
+body
+{
+	color:blue;
+	font-size: 15px;
+	background-color:rgb(10%,40%,50%);
+}
+
+#p0,#p2
+{
+    color: rgb(16,200,255);
+    font-size: 30px;
+}
+/*
+#p1
+{
+    color: #f0e;
+    font-size: 20px;
+}
+*/
+label.etiqueta
+{
+	color:green;
+	font-size:30px;
+}
+
+p.etiqueta
+{
+	color:#0f0;
+}
+
+span
+{
+    color: red;
+    font-size: 30px;
+}
